@@ -5,3 +5,8 @@ The changes I have made are following
 1. Dockerfile to resolve errors.
 2. Create a better Readme file.
 
+## Installation Steps
+1. `docker build .`
+2. `./buil.sh`
+Give ip if you don’t it will automatically select ip
+
