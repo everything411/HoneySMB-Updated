@@ -7,6 +7,6 @@ The changes I have made are following
 
 ## Installation Steps
 1. `docker build .`
-2. `./buil.sh`
+2. `./build.sh`
 Give ip if you don’t it will automatically select ip
 
