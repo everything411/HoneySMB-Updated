@@ -1,10 +1,21 @@
 FROM ubuntu
-MAINTAINER Rohit Sehgal (rsehgal@iitk.ac.in)
+MAINTAINER Sehrish Shafeeq
 
 RUN apt-get update -y && apt-get install python2.7 -y
 RUN apt-get update
-RUN apt-get install python tcpdump python-pip -y
+RUN apt-get install tcpdump python-pip -y
 RUN apt-get install aptitude -y
+
+RUN apt-get install software-properties-common -y
+RUN apt-add-repository universe -y
+RUN apt-get update
+RUN apt-get install python3-pip -y
+RUN apt-get install aptitude -y
+RUN apt-get install curl -y
+RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
+RUN python2.7 get-pip.py
+RUN apt-get install python-dev build-essential libssl-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev -y
+RUN apt-get install libblas-dev libatlas-base-dev -y
 
 RUN mkdir -p /home/smb
 
