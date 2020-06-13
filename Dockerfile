@@ -3,7 +3,7 @@ MAINTAINER Sehrish Shafeeq
 
 RUN apt-get update -y && apt-get install python2.7 -y
 RUN apt-get update
-RUN apt-get install tcpdump python-pip -y
+RUN apt-get install tcpdump -y
 RUN apt-get install aptitude -y
 
 RUN apt-get install software-properties-common -y
