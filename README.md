@@ -6,7 +6,11 @@ The changes I have made are following
 2. Create a better Readme file.
 
 ## Installation Steps
-1. `docker build .`
-2. `./build.sh`
+### Method 1
+1. `docker build -t smb .`
+2. `docker run -d --name smbhoneypot smb`
+
+### Method 1
+1. `./build.sh`
 Give ip if you don’t it will automatically select ip
 
