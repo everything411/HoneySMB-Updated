@@ -6,7 +6,7 @@ RUN apt-get update
 RUN apt-get install tcpdump -y
 RUN apt-get install aptitude -y
 
-RUN apt-get install software-properties-common -y
+RUN DEBIAN_FRONTEND=noninteractive apt-get install software-properties-common -y
 RUN apt-add-repository universe -y
 RUN apt-get update
 RUN apt-get install python3-pip -y
