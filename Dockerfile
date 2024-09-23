@@ -1,5 +1,5 @@
-FROM ubuntu
-MAINTAINER Sehrish Shafeeq
+FROM ubuntu:22.04
+MAINTAINER everything411
 
 RUN apt-get update -y && apt-get install python2.7 -y
 RUN apt-get update
@@ -12,9 +12,9 @@ RUN apt-get update
 RUN apt-get install python3-pip -y
 RUN apt-get install aptitude -y
 RUN apt-get install curl -y
-RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
+RUN curl "https://bootstrap.pypa.io/pip/2.7/get-pip.py" -o "get-pip.py"
 RUN python2.7 get-pip.py
-RUN apt-get install python-dev build-essential libssl-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev -y
+RUN apt-get install python2-dev build-essential libssl-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev -y
 RUN apt-get install libblas-dev libatlas-base-dev -y
 
 RUN mkdir -p /home/smb
