@@ -1,2 +1,2 @@
 #!/bin/bash
-python /home/smb/smbserver.py
+python2 /home/smb/smbserver.py
